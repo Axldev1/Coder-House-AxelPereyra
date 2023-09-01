@@ -1,5 +1,30 @@
 @import url(../node_modules/bootstrap/scss/bootstrap.scss);
-
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+@font-face {
+    font-family:Source Sans Pro;
+    src: url(./fonts/SourceSansPro-Black.otf);
+}
+@font-face {
+    font-family:Reboto mono;
+    src: url(./fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Oswald;
+    src: url(./fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Open sans;
+    src: url(./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: Promt;
+    src: url(./fonts/Prompt-Black.ttf);
+}
 /*# sourceMappingURL=styles.css.map */
 /* cambio de fuente del texto joji puesto en el nav */
 #title-nav {
@@ -13,4 +38,62 @@
 /* poner margin top en la primera caja del home */
 #home-1 {
     margin-top: 140px;
+    & h1{
+        color:#444444;
+        font-family: "Source Sans Pro";
+    }
+    & p {
+        color:#7a7a7a;
+        font-size: 17px;
+        font-family: "Source Sans Pro";
+    }
+    & #shop-container{
+        color:#ffffff;
+        background: #444444;
+        width: 148px;
+        height: 42px;
+        border-width: 2px;
+        border-style: solid #444444;
+        border-radius: 24px 24px 24px 24px;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 4px;
+        box-sizing: border-box;
+        display: inline-block;
+        text-decoration: none;
+    }
+    & #discography-container {
+        color: #232323;
+        background: white;
+        width: 148px;
+        height: 42px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 24px 24px 24px 24px;
+        font-family: "Source Sans Pro";
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 4px;
+        box-sizing: border-box;
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+/* dandole margin top a las cards del home */
+#cards-home {
+    margin-top: 289px;
+    margin-bottom: 65px;
+    & img {
+        width: 130px;
+        height:110px;
+    }
+}
+/* footer */
+#footer {
+    & a {
+        text-decoration: none;
+    }
 }
