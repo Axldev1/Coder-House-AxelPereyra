@@ -1,0 +1,16 @@
+@import url(../node_modules/bootstrap/scss/bootstrap.scss);
+
+/*# sourceMappingURL=styles.css.map */
+/* cambio de fuente del texto joji puesto en el nav */
+#title-nav {
+	font-family: "Reboto mono";
+    font-size: 25px;
+}
+/* hover en el nav */
+#navbarSupportedContent ul li a:hover{
+    color:red;
+}
+/* poner margin top en la primera caja del home */
+#home-1 {
+    margin-top: 140px;
+}
