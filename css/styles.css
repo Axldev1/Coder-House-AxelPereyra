@@ -77,8 +77,8 @@
 
 /* dandole margin top y bottom a las cards del home + un tamaño a las imagenes de las mismas cards*/
 .cards-home {
-  margin-top: 289px;
-  margin-bottom: 65px;
+  margin-top: 32%;
+  margin-bottom: 10%;
 }
 .cards-home img {
   width: 130px;
@@ -204,7 +204,7 @@
   font-size: 5vw;
   margin-bottom: 5%;
   margin-right: 2%;
-  margin-top: 60px;
+  margin-top: 17%;
 }
 
 .cards-vinyls .vinyl-card {
@@ -244,10 +244,6 @@
 .cards-vinyls .vinyl-card .btn-secondary:hover {
   background-color: #555;
   color: #fff;
-}
-
-.cards-vinyls .ballads-card img {
-  max-height: 325px;
 }
 
 /* parte final de la tienda */
