@@ -7,29 +7,16 @@
 }
 @font-face {
     font-family:Source Sans Pro;
-    src: url(./fonts/SourceSansPro-Black.otf);
+    src: url(../fonts/SourceSansPro-Black.otf);
 }
 @font-face {
     font-family:Reboto mono;
-    src: url(./fonts/RobotoMono-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family:Oswald;
-    src: url(./fonts/Oswald-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: Open sans;
-    src: url(./fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
-}
-@font-face {
-    font-family: Promt;
-    src: url(./fonts/Prompt-Black.ttf);
+    src: url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
 }
 /*# sourceMappingURL=styles.css.map */
 /* cambio de fuente del texto joji puesto en el nav */
 .title-nav {
     & h3{
-        font-family: "Reboto mono";
         font-size: 25px;
     }
 }
@@ -49,10 +36,12 @@
     }
     & p {
         color:#7a7a7a;
-        font-size: 1.2vw;
+        font-size: 90%;
         font-family: "Source Sans Pro";
     }
     .shop-discography {
+      display: flex; 
+      justify-content: flex-start;
       margin-left: 9%;
     }
     .shop-container {
@@ -79,14 +68,9 @@
       border-style: solid;
     }
 }
-/* dandole margin top y bottom a las cards del home + un tamaño a las imagenes de las mismas cards*/
+/* cards home */
 .cards-home {
-    margin-top: 32%;
-    margin-bottom: 10%;
-    & img {
-        width: 130px;
-        height:110px;
-    }
+  margin-top: 29%;
 }
 /* footer */
 .footer {
@@ -104,7 +88,6 @@
 
 /* titulo tienda */
 .shop-title {
-  font-family: "Promt";
   font-size: 5vw;
   margin-bottom: 5%;
   margin-right: 2%;
