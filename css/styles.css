@@ -39,18 +39,22 @@
   color: red;
 }
 
-/* poner margin top en la primera caja del home */
-.home-1 {
-  margin-top: 140px;
+/* home */
+.home-1 h1, .home-1 p {
+  margin-left: 10%;
 }
 .home-1 h1 {
   color: #444444;
   font-family: "Source Sans Pro";
+  font-size: 3rem;
 }
 .home-1 p {
   color: #7a7a7a;
-  font-size: 17px;
+  font-size: 1.2vw;
   font-family: "Source Sans Pro";
+}
+.home-1 .shop-discography {
+  margin-left: 9%;
 }
 .home-1 .shop-container, .home-1 .discography-container {
   color: #ffffff;
