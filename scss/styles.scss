@@ -382,7 +382,7 @@ input[type="submit"]:hover {
   & div {
     font-size: 1.3rem;
     display: flex;
-    margin-top: 44%;
+    margin-top: 22%;
     justify-content: center;
     font-family: Open sans;
     color: #3b4754;
@@ -422,6 +422,21 @@ input[type="submit"]:hover {
     font-family: Open sans;
   }
 }
+/* discografia */
+.discography-title{
+  display: flex;
+  justify-content: center;
+  & h1{
+    font-size: 3rem;
+  }
+}
+/* cards discografia */
+.discography-cards{
+  margin-top: 5rem;
+  .albums{
+    width: 24rem;
+  }
+}
 /* vista mobile */
 @media screen and (min-width: 120px) and (max-width: 480px) {
   /* biografia */
@@ -450,6 +465,15 @@ input[type="submit"]:hover {
       font-family: Open sans;
     }
   }
+  /* discografia */
+  .discography-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .albums{
+      margin: 0 auto;
+    }
+  }
 }
 /* vista laptop */
 @media screen and (min-width: 993px) and (max-width: 1400px) {
@@ -457,6 +481,11 @@ input[type="submit"]:hover {
   .biography-container{
     & video{
       margin-left: 28%;
+    }
+  }
+  .middle-discography-1 {
+    & div {
+      margin-top: 14%;
     }
   }
 }
