@@ -18,6 +18,10 @@
   src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 /*# sourceMappingURL=styles.css.map */
+/* body discography */
+.main-discography, .main-shop{
+  background-color: #292726;
+}
 /* cambio de fuente del texto joji puesto en el nav */
 .title-nav {
     & h3{
@@ -236,6 +240,10 @@
   color: #fff;
 }
 /* parte final de la tienda */
+.smithereens-hoodie{
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
 .card-clothes img {
   width: 50%;
   height: auto;
