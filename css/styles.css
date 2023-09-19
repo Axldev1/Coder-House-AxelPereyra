@@ -500,6 +500,10 @@ input[type=submit]:hover {
   .middle-discography-1 div {
     margin-top: 14%;
   }
+  /* discografia */
+  .cards-albums {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
