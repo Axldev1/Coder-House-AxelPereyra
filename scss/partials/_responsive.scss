@@ -1,0 +1,52 @@
+/* vista mobile */
+@media screen and (min-width: 120px) and (max-width: 480px) {
+    /* biografia */
+    .biography-container{
+      & video{
+        margin-left: 0rem;
+      }
+    }
+  }
+  /* vista tablet */
+  @media screen and (min-width: 481px) and (max-width: 992px){
+    /* biografia */
+    .biography-container{
+      & video{
+        margin-left: 6.5rem;
+      }
+    }
+    .claim-to-fame-2 {
+      margin-top: 2rem;
+      & img{
+        width: 20rem;
+        height: 20rem;
+      }
+      & h2,p {
+        color: #798da3;
+        font-family: Open sans;
+      }
+    }
+    /* discografia */
+    .discography-cards{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .albums{
+        margin: 0 auto;
+      }
+    }
+  }
+  /* vista laptop */
+  @media screen and (min-width: 993px) and (max-width: 1400px) {
+    /* biografia */
+    .biography-container{
+      & video{
+        margin-left: 28%;
+      }
+    }
+    .middle-discography-1 {
+      & div {
+        margin-top: 14%;
+      }
+    }
+  }

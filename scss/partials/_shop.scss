@@ -1,0 +1,180 @@
+/* principio tienda */
+/* lineas divisoras tienda */
+.divisor-line-shop,
+.divisor-line-shop-3 {
+  background-color: #fff;
+  margin-top: 5%;
+}
+
+/* titulo tienda */
+.shop-title {
+  font-size: 5vw;
+  margin-bottom: 5%;
+  margin-right: 2%;
+}
+
+/* cards del principio de la tienda */
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  .img-cards-shop-1 {
+      width: 95px;
+      height: 95px;
+  }
+}
+
+.cards .card {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+/* boton comprar para las cards del principio de la tienda */
+.button-buy {
+  margin-top: 5%;
+  --color: rgba(88, 101, 242, 1);
+  padding: 1vw 2vw;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 1.5vw;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.button-buy::before,
+.button::after {
+  content: '';
+  display: block;
+  width: 4vw;
+  height: 4vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.button-buy::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button-buy::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button-buy:hover::before,
+.button:hover::after {
+  height: 41vw;
+  width: 41vw;
+}
+
+.button-buy:hover {
+  color: #fff;
+}
+
+.button-buy:active {
+  filter: brightness(.8);
+}
+
+/* discos de vinilo tienda */
+.vinyl-title {
+  font-size: 5vw;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-top: 17%;
+}
+.cards-vinyls .vinyl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #333; 
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cards-vinyls .vinyl-card img {
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+.cards-vinyls .vinyl-card .card-title {
+  font-size: 1.5rem; 
+  color: #fff; 
+}
+
+.cards-vinyls .vinyl-card .btn-secondary {
+  background-color: rgba(88, 101, 242, 1); 
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cards-vinyls .vinyl-card .btn-secondary:hover {
+  background-color: #555; 
+  color: #fff;
+}
+/* parte final de la tienda */
+.smithereens-hoodie{
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+.card-clothes img {
+  width: 50%;
+  height: auto;
+}
+.card-clothes {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-clothes img {
+  width: 100%;
+  height: auto;
+}
+
+.card-clothes .card-title {
+  font-size: 1.2rem;
+}
+
+.card-clothes .btn-secondary {
+  font-size: 1rem;
+  padding: 8px 16px;
+}

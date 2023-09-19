@@ -1,0 +1,59 @@
+/* principio */
+.biography-container {
+    & video {
+      width: 30rem;
+      margin-left: 57%;
+    }
+    & p{
+      font-size: 1.5rem;
+    }
+    & h1,p{
+      font-family: Open sans;
+      color: #3b4754;
+    }
+  }
+  /* mitad */
+  .middle-discography-1 {
+    & div {
+      font-size: 1.3rem;
+      display: flex;
+      margin-top: 22%;
+      justify-content: center;
+      font-family: Open sans;
+      color: #3b4754;
+    }
+  }
+  .before-the-music{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    font-family: Open sans;
+    & h2{
+      color: #3b4754;
+    }
+    & p{
+      color: #798da3;
+    }
+  }
+  /* final biografia */
+  .claim-to-fame {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    color: #798da3;
+    font-family: inter;
+    & h3{
+      text-align: center;
+    }
+  }
+  .claim-to-fame-2 {
+    margin-top: 2rem;
+    & img{
+      width: 20rem;
+      height: 20rem;
+    }
+    & h2,p {
+      color: #798da3;
+      font-family: Open sans;
+    }
+  }

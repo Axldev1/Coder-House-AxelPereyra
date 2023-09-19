@@ -1,0 +1,10 @@
+/* cambio de fuente del texto joji puesto en el nav */
+.title-nav {
+    & h3{
+        font-size: 25px;
+    }
+}
+/* hover en el nav */
+.title-nav .hover-nav ul li a:hover{
+    color:red;
+}

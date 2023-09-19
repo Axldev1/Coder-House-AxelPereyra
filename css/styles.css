@@ -18,12 +18,12 @@
   font-family: inter;
   src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
-
-/* body discography */
+/* background discography y shop */
 .main-discography, .main-shop {
   background-color: #292726;
 }
 
+/* nav */
 /* cambio de fuente del texto joji puesto en el nav */
 .title-nav h3 {
   font-size: 25px;
@@ -81,11 +81,7 @@
   margin-top: 31%;
 }
 
-/* footer */
-.footer a {
-  text-decoration: none;
-}
-
+/* tienda */
 /* principio tienda */
 /* lineas divisoras tienda */
 .divisor-line-shop,
@@ -455,6 +451,12 @@ input[type=submit]:hover {
   width: 24rem;
 }
 
+/* footer */
+.footer a {
+  text-decoration: none;
+}
+
+/* media queries */
 /* vista mobile */
 @media screen and (min-width: 120px) and (max-width: 480px) {
   /* biografia */
