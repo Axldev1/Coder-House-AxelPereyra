@@ -1,0 +1,21 @@
+@mixin color-font ($color, $font, $size){
+    color: $color;
+    font-family: $font;
+    font-size: $size;
+}
+@mixin display-justify (){
+    display: flex;
+    justify-content: center;
+}
+/* mixin para ahorrar codigo en el login button */
+@mixin login-button(){
+    @include color-font(#fff,none, 1.2em);
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    transition: 0.25s;
+}

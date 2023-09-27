@@ -1,16 +1,16 @@
+@import './_variables.scss';
+@import './mixin';
 .home-1 {
     & h1,p{
       margin-left: 10%;
     }
     & h1{
-        color:#444444;
-        font-family: "Source Sans Pro";
+        @include color-font(map-get($paleta, negro),map-get($fonts, sans), 3rem);
         font-size: 3rem;
     }
     & p {
-        color:#7a7a7a;
         font-size: 90%;
-        font-family: "Source Sans Pro";
+        @include color-font(#7a7a7a,map-get($fonts, sans), 90%);
     }
     .shop-discography {
       display: flex; 
@@ -18,17 +18,15 @@
       margin-left: 9%;
     }
     .shop-container {
-      color: #ffffff;
-      background: #444444;
+      @include color-font(#ffffff,map-get($fonts, sans), 16px);
+      background: map-get($paleta, negro);
+      border-style: solid  map-get($paleta, negro);
       width: 148px;
       height: 42px;
       border-width: 2px;
-      border-style: solid #444444;
       border-radius: 24px 24px 24px 24px;
-      font-family: "Source Sans Pro";
       text-align: center;
       font-weight: 600;
-      font-size: 16px;
       padding: 4px;
       box-sizing: border-box;
       display: inline-block;
@@ -36,7 +34,7 @@
     }
     .discography-container {
       @extend .shop-container;
-      color: #232323;
+      color:  map-get($paleta, negro);
       background: white;
       border-style: solid;
     }

@@ -1,5 +1,6 @@
 /* principio tienda */
 /* lineas divisoras tienda */
+@import './_variables.scss';
 .divisor-line-shop,
 .divisor-line-shop-3 {
   background-color: #fff;
@@ -25,10 +26,9 @@
 }
 
 .cards .card {
+  @include display-justify();
   margin-top: 50px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
   height: 100px;

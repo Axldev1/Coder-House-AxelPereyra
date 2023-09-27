@@ -1,47 +1,45 @@
 /* principio */
+@import './_variables.scss';
+@import './mixin';
 .biography-container {
     & video {
       width: 30rem;
       margin-left: 57%;
+      max-width: 100%;
+      height: auto;
     }
     & p{
       font-size: 1.5rem;
     }
     & h1,p{
-      font-family: Open sans;
-      color: #3b4754;
+      font-family: map-get($fonts, sans);
+      color: map-get($paleta, gris);
     }
   }
   /* mitad */
-  .middle-discography-1 {
+  .middle-biography-1 {
     & div {
-      font-size: 1.3rem;
-      display: flex;
+      @include display-justify();
+      @include color-font(map-get($paleta, gris),map-get($fonts, sans), 1.3rem);
       margin-top: 22%;
-      justify-content: center;
-      font-family: Open sans;
-      color: #3b4754;
     }
   }
   .before-the-music{
     margin-top: 8rem;
-    display: flex;
-    justify-content: center;
-    font-family: Open sans;
+    @include display-justify();
+    font-family: map-get($fonts, sans);
     & h2{
-      color: #3b4754;
+      color: map-get($paleta, gris);
     }
     & p{
-      color: #798da3;
+      color: map-get($paleta, gris-claro);
     }
   }
   /* final biografia */
   .claim-to-fame {
     margin-top: 12rem;
-    display: flex;
-    justify-content: center;
-    color: #798da3;
-    font-family: inter;
+    @include display-justify();
+    @include color-font(map-get($paleta, gris-claro),map-get($fonts, inter), none);
     & h3{
       text-align: center;
     }
@@ -53,7 +51,6 @@
       height: 20rem;
     }
     & h2,p {
-      color: #798da3;
-      font-family: Open sans;
+      @include color-font(map-get($paleta, gris-claro),map-get($fonts, sans), none);
     }
   }

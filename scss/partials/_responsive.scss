@@ -1,9 +1,19 @@
 /* vista mobile */
+@import './_variables.scss';
+/* vista mobile */
 @media screen and (min-width: 120px) and (max-width: 480px) {
     /* biografia */
     .biography-container{
       & video{
         margin-left: 0rem;
+      }
+    }
+    .discography-cards{
+      @include display-justify();
+      flex-wrap: wrap;
+      .albums{
+        margin: 0 auto;
+        width: 20.6rem;
       }
     }
   }
@@ -22,17 +32,27 @@
         height: 20rem;
       }
       & h2,p {
-        color: #798da3;
-        font-family: Open sans;
+        color:  map-get($paleta, gris-claro);
+        font-family: map-get($fonts, sans);
       }
     }
     /* discografia */
     .discography-cards{
-      display: flex;
-      justify-content: center;
+      @include display-justify();
       flex-wrap: wrap;
       .albums{
         margin: 0 auto;
+      }
+    }
+     /* footer */
+    .footer{
+      text-align: center;
+    }
+    /* albums home */
+    .cards-home{
+      @include display-justify();
+      & div{
+        width: 28rem;
       }
     }
   }
